@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MainLayout } from "../components/layouts/MainLayout";
+
 export default function Home() {
   return (
     <>
@@ -16,6 +17,6 @@ export default function Home() {
   );
 }
 
-Home.getLayout = function getLayout(page) {
+Home.getLayout = function getLayout(page: JSX.Element) {
   return <MainLayout>{page}</MainLayout>;
 };

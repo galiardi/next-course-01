@@ -13,6 +13,6 @@ const Contact = () => {
 };
 export default Contact;
 
-Contact.getLayout = function getLayout(page) {
+Contact.getLayout = function getLayout(page: JSX.Element) {
   return <MainLayout>{page}</MainLayout>;
 };
